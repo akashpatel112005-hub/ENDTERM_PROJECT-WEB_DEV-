@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+               script-src 'self' https://cdnjs.cloudflare.com;
+               style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline';
+               img-src 'self' data:;
+               font-src 'self' https://cdnjs.cloudflare.com;
+               connect-src 'self'">
+    <title>LearnTech | Interactive Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="landing-container">
+        <div class="landing-page-wrapper">
+            <nav class="landing-nav">
+                <div class="container">
+                    <div class="nav-content">
+                        <div class="logo">
+                            <h1><i class="fas fa-graduation-cap"></i> LearnTech</h1>
+                        </div>
+                        <div class="nav-actions">
+                            <button class="btn-theme-toggle" title="Toggle dark mode">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                            <button id="landing-login-btn" class="btn btn-outline">
+                                <i class="fas fa-sign-in-alt"></i> Student Login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h2>Master Data Structures, Algorithms & Linear Algebra</h2>
+                            <p class="hero-subtitle">Interactive learning platform designed for computer science
+                                students and developers</p>
+
+                            <div class="hero-features">
+                                <div class="feature">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <h3>Interactive Learning</h3>
+                                    <p>Engage with hands-on examples and visual demonstrations</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h3>Progress Tracking</h3>
+                                    <p>Monitor your learning journey with detailed analytics</p>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-tasks"></i>
+                                    <h3>Skill Assessment</h3>
+                                    <p>Test your knowledge with timed quizzes and exercises</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-graduation-cap main-illustration"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses Section -->
+            <section class="courses-section">
+                <div class="container">
+                    <h2 class="section-title">Featured Courses</h2>
+                    <p class="section-subtitle">Choose from our comprehensive learning paths</p>
+
+                    <div class="course-cards">
+                        <div class="course-card">
+                            <div class="course-icon" style="background-color: #4361ee;">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>DSA</h3>
+                            <p>Learn algorithms and data structures</p>
+                            <div class="course-tags">
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-icon" style="background-color: #3a0ca3;">
+                                <i class="fas fa-square-root-alt"></i>
+                            </div>
+                            <h3>Linear Algebra</h3>
+                            <p>Master vectors, matrices, and transformations with visual examples</p>
+                            <div class="course-tags">
+                                <span class="tag">Vectors</span>
+                                <span class="tag">Matrices</span>
+                                <span class="tag">Transformations</span>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-icon" style="background-color: #f0db4f;">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3>JavaScript Fundamentals</h3>
+                            <p>Build a solid foundation in modern JavaScript programming</p>
+                            <div class="course-tags">
+                                <span class="tag">ES6+</span>
+                                <span class="tag">DOM</span>
+                                <span class="tag">Async Programming</span>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-icon" style="background-color: #3776ab;">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3>Python for Developers</h3>
+                            <p>Learn Python programming for data science and web development</p>
+                            <div class="course-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Data Science</span>
+                                <span class="tag">Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-section">
+                        <h3>Ready to start your learning journey ?</h3>
+                        <p>Join thousands of students who are mastering computer science concepts</p>
+                        <button id="get-started-btn" class="btn btn-primary btn-large">
+                            <i class="fas fa-rocket"></i> Get Started Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="landing-footer">
+                <div class="container">
+                    <p>© 2024 LearnTech Interactive Learning Platform. All rights reserved.</p>
+                    <p class="footer-links">
+                        <a href="#" class="external-link">
+                            <i class="fas fa-question-circle"></i> Help Center
+                        </a>
+                        <a href="#" class="external-link">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                        <a href="#" class="external-link">
+                            <i class="fas fa-shield-alt"></i> Privacy Policy
+                        </a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Login Page (Initially hidden) -->
+    <div id="login-screen" class="login-container" style="display: none;">
+        <div class="login-box">
+            <button id="back-to-landing" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </button>
+
+            <div class="logo">
+                <h1><i class="fas fa-graduation-cap"></i> LearnTech</h1>
+            </div>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="student-name"><i class="fas fa-id-card"></i> Full Name</label>
+                    <input type="text" id="student-name" class="form-control" placeholder="Enter your full name"
+                        required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-email"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="student-email" class="form-control" placeholder="Enter your email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-sign-in-alt"></i> Login to Dashboard
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard (Initially hidden) -->
+    <div id="dashboard" class="dashboard-container" style="display: none;">
+        <header class="dashboard-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1><i class="fas fa-graduation-cap"></i> LearnTech</h1>
+                        <p>Interactive Learning Platform</p>
+                    </div>
+                    <div class="nav-actions">
+                        <button class="btn-theme-toggle" title="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <div class="user-info">
+                            <div class="user-details">
+                                <span id="logged-in-user">Student</span>
+                                <button id="logout-btn" class="btn-logout">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </button>
+                            </div>
+                            <div class="user-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <div class="container">
+                <section class="welcome-section">
+                    <h2>Welcome back, <span id="welcome-name">Student</span>!</h2>
+                    <p>Continue your learning journey. Track your progress and master new concepts.</p>
+                </section>
+
+                <!-- Progress Overview -->
+                <section class="progress-overview">
+                    <h3><i class="fas fa-chart-line"></i> Learning Progress</h3>
+                    <div class="progress-cards">
+                        <!-- Progress will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Learning Modules Section -->
+                <section class="learning-modules-section">
+                    <h3><i class="fas fa-book-open"></i> Learning Modules</h3>
+                    <p>Explore our comprehensive learning modules with topics and quizzes</p>
+
+                    <div class="learning-modules-grid">
+                        <!-- Learning module cards will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Recent Activity -->
+                <section class="activity-section">
+                    <h3><i class="fas fa-history"></i> Recent Activity</h3>
+                    <div class="activity-list">
+                        <!-- Activity will be populated by JavaScript -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Topic Modal (Hidden initially) -->
+    <div id="topic-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Subject Topics</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="topics-list">
+                    <!-- Topics will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal (Hidden initially) -->
+    <div id="quiz-modal" class="modal" style="display: none;">
+        <div class="modal-content quiz-modal">
+            <div class="modal-header">
+                <h2 id="quiz-title">Quiz</h2>
+                <div class="quiz-timer">
+                    <i class="fas fa-clock"></i> Time: <span id="timer">05:00</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="quiz-progress-fill"></div>
+                    </div>
+                    <div class="progress-text">Question <span id="current-question">1</span> of <span
+                            id="total-questions">3</span></div>
+                </div>
+
+                <div class="quiz-container">
+                    <!-- Quiz questions will be populated by JavaScript -->
+                </div>
+
+                <div class="quiz-explanation" id="quiz-explanation" style="display: none;">
+                    <div class="explanation-header">
+                        <i class="fas fa-info-circle"></i> Explanation
+                    </div>
+                    <p id="explanation-text"></p>
+                </div>
+
+                <div class="quiz-navigation">
+                    <button id="prev-btn" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <div class="quiz-score-display" id="score-display" style="display: none;">
+                        Score: <span id="current-score">0</span>/<span id="total-possible">0</span>
+                    </div>
+                    <div class="nav-right">
+                        <button id="next-btn" class="btn btn-primary">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button id="submit-quiz-btn" class="btn btn-success" style="display: none;">
+                            <i class="fas fa-paper-plane"></i> Submit Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Results Modal (Hidden initially) -->
+    <div id="results-modal" class="modal" style="display: none;">
+        <div class="modal-content results-modal">
+            <div class="modal-header">
+                <h2>Quiz Results</h2>
+                <button class="close-results">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="results-summary">
+                    <div class="result-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 id="result-score">Score: 0/0</h3>
+                    <p id="result-message">Keep practicing to improve!</p>
+                    <div class="result-details">
+                        <p><i class="fas fa-clock"></i> Time Taken: <span id="time-taken">0:00</span></p>
+                    </div>
+                </div>
+
+                <!-- Question Breakdown Section-->
+                <div id="question-breakdown" class="question-breakdown">
+                    <!-- Question breakdown will be populated by JavaScript -->
+                </div>
+
+                <div class="results-actions">
+                    <button id="retake-quiz" class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> Retake Quiz
+                    </button>
+                    <button id="back-to-topics" class="btn btn-primary">
+                        <i class="fas fa-book"></i> Back to Topics
+                    </button>
+                    <button id="back-to-dashboard" class="btn btn-success">
+                        <i class="fas fa-home"></i> Back to Dashboard
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
